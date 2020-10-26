@@ -1,2 +1,8 @@
-# cryptocurrencies_m18
-Analyze different cryptocurrencies to help convince firm investment in a cryptocurrency
+# Crypto Currencies
+Analyze different cryptocurrencies to help convince firm investment in a cryptocurrency.
+
+
+## Challenege
+Use unsupervised learning to analyze data on the cryptocurrencies traded on the market. 
+
+
