@@ -6,11 +6,13 @@ Using unsupervised machine learning models and algorithms on collections of cryp
 Here is a rundown of Unsupervised Machine Learning practice: 
 
 - Understand both supervised and unsupervised learning
-- Preprocess data for unsupervised learning with Pandas ```pd.get_dummies```, with training and testing for algorithm processing
+- Preprocess data for unsupervised learning with Pandas such as removing null constraints and duplicates
 - Cluster data using the K-means algorithm with *K* number of clusters with means of data appointed to each cluster
 - Determine the best number of centroids clusters for K-means using the elbow-point curve and inertia objective function which measures variation in the dataset
 - Use PCA to limit features, avoid overfitting data, and speed up the model by transforming a larger set of variables into a digestible formed set.
 - Hierarchical clustering, aka agglomerative clustering, can be used in tandem with K-means that groups (clusters) data points
+
+---
 
 ## Unsupervised Machine Learning Practice Datasets
 Selected datasets were cleaned and transformed in various methods such as removing null values and duplicates, removing textual-based and ID based columns, and boolean statement data points into strings. These transformations indicate pattern for digestible data for a number-crunching machine, such as a laptop, to perform machine learning.
@@ -39,4 +41,18 @@ There are a few points to consider when comparing both K-mean and hierarchical c
 
 
 ## Challenge
-Use unsupervised learning to analyze data on the cryptocurrencies traded on the market.
+Unsupervised machine learning models will be employed to analyze data on the cryptocurrencies traded on the market. K-means clustering algorithm is an optimal choice since an analyst might not decide a target feature, in addition to a manageable number of features (columns).
+
+Some tasks included:
+- Prepare dataset for optimization with dimensions reduction with PCA and clustering using K-means
+- Predict the number of clusters with elbow curve
+- Showcase 2D and 3D scatter plots to analyze clusters and choose the optimal cryptocurrency for investment
+
+Any dataset requires a keen eye from the analyst, where the use of it hinges on details of analysis and usable datapoints. Therefore, a refined cryptocurrency dataset must be molded from cleaning methods such as removing non-trading, non-defined currencies and inhabited null values as well as transforming non-numeric and categorical columns to integer values and boolean columns. A cleaned dataset might look like this: 
+![cyrtodf](unsuperised_pracitice_notebooks/img/crypto_df1.jpg)
+
+Next, Pandas method ```pd.get_dummies``` will create dummy numbers for important textual feature columns and the dataset will be optimized using StandandScalars to scale all values and PCA to reduce variables of large dataset. The elbow curve will determine the optimal number of K clusters, in this case, ```K=4```. A merged dataset of features with PCA components and main ID column is created to showcase a 3-d scatter plot of clusters.
+![crypto_cluster](unsuperised_pracitice_notebooks/img/crypto_clusters.png)
+
+Lastly, a 2-d scatter plot displays a contrast of available coins versus the total number of mined coins, to which an analyst can gather the high volume of a successful coin, such as that of *BitTorrent*. 
+![bestcrypto](unsuperised_pracitice_notebooks/img/crypto_best.png)
