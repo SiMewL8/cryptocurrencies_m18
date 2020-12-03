@@ -55,4 +55,4 @@ Next, Pandas method ```pd.get_dummies``` will create dummy numbers for important
 ![crypto_cluster](unsuperised_pracitice_notebooks/img/crypto_clusters.png)
 
 Lastly, a 2-d scatter plot displays a contrast of available coins versus the total number of mined coins, to which an analyst can gather the high volume of a successful coin, such as that of *BitTorrent*. 
-![bestcrypto](unsuperised_pracitice_notebooks/img/crypto_best.png)
+![bestcrypto](unsuperised_pracitice_notebooks/img/crypto_best1.jpg)
