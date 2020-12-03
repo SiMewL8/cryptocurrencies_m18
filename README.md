@@ -1,4 +1,4 @@
-# Crypto Currencies
+# CryptoCurrency Investment with Unsupervised Machine Learning
 Analyzed different cryptocurrencies to extrapolate common patterns and factors for investment firms looking to *invest* in cryptocurrency.
 
 Using unsupervised machine learning models and algorithms on collections of cryptocurrencies to find patterns when a target feature is missing or and all features unlabeled. The primarily algorithm, K-means, will group similar data of cryptocurrency features into clusters. In addition, PCA (Principal Component Analysis) which helps reduce features and avoid overfitting data.  
