@@ -1,5 +1,5 @@
 # Crypto Currencies
-Analyze different cryptocurrencies to extrapolate common patterns and factors for investment firms looking to *invest* in cryptocurrency.
+Analyzed different cryptocurrencies to extrapolate common patterns and factors for investment firms looking to *invest* in cryptocurrency.
 
 Using unsupervised machine learning models and algorithms on collections of cryptocurrencies to find patterns when a target feature is missing or and all features unlabeled. The primarily algorithm, K-means, will group similar data of cryptocurrency features into clusters. In addition, PCA (Principal Component Analysis) which helps reduce features and avoid overfitting data.  
 
@@ -14,7 +14,7 @@ Here is a rundown of Unsupervised Machine Learning practice:
 
 ## Unsupervised Machine Learning Practice Datasets
 Selected datasets were cleaned and transformed in various methods such as removing null values and duplicates, removing textual-based and ID based columns, and boolean statement data points into strings. These transformations indicate pattern for digestible data for a number-crunching machine, such as a laptop, to perform machine learning.
-![data1](unsuperised_pracitice_notebooks\img\transformed_data1.jpg)
+![data1](unsuperised_pracitice_notebooks/img/transformed_data1.jpg)
 
 The dataset requires K clusters; however, trial and error are used to determine the optimal number of clusters, but for the purpose of practice, 3 clusters is optimal number for this dataset. Then, the DataFrame is fit into the K-means model and used to predict the clusters as ```class```. Lastly, visual plots with plotly and hvplot modules are utilized for clustering means. Another method for visualizing the clusters is plotly 3d model. 
 
